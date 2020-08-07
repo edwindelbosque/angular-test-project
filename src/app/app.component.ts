@@ -12,19 +12,19 @@ export class AppComponent {
   includeSymbols = false;
   passwordLength = 0;
 
-  setPasswordLength = (value: number) => {
+  onChangeLength = (value: number) => {
     this.passwordLength = value;
   };
 
-  toggleLetters = () => {
+  onChangeUseLetters = () => {
     this.includeLetters = !this.includeLetters;
   };
 
-  toggleNumbers = () => {
+  onChangeUseNumbers = () => {
     this.includeNumbers = !this.includeNumbers;
   };
 
-  toggleSymbols = () => {
+  onChangeUseSymbols = () => {
     this.includeSymbols = !this.includeSymbols;
   };
 
